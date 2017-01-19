@@ -1,25 +1,20 @@
-# README
+# Ruby on Rails -[course](https://github.com/mluukkai/WebPalvelinohjelmointi2017)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application running on [heroku](https://blooming-river-28802.herokuapp.com/breweries)
 
-Things you may want to cover:
+## Development
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+### Deploying
+* Push code to heroku 
+* `git push heroku master`
+* Migrate db changes
+* `heroku run rake db:migrate`
+* Seed db with testdata
+* `heroku run rake db:seed`
 
-* Database creation
+### Admin
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# ruby-on-rails-course
+* Heroku console
+* `heroku run console`
