@@ -22,3 +22,6 @@
 
 # RubyMine ide-files
 /.idea
+
+Gemfile.lock
+Gemfile.save
