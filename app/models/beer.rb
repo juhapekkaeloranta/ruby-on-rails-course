@@ -18,4 +18,8 @@ class Beer < ActiveRecord::Base
       ratingElement.score
       }.sum.to_f / self.ratings.count
   end
+
+  def to_s
+    self.name + " - " + self.brewery.name
+  end
 end
