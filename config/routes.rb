@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   post 'ratings', to: 'ratings#create'
 
+  get 'beer/new', to: 'beers#new'
+
+  post 'beers', to: 'beers#create'
 end
