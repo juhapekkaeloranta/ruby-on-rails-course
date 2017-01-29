@@ -1,5 +1,6 @@
 class Brewery < ActiveRecord::Base
   has_many :beers
+  has_many :ratings, through: :beers
 
   def print_report
     puts self.name
@@ -10,6 +11,12 @@ class Brewery < ActiveRecord::Base
   def restart
     self.year = 2017
     puts "changed year to #{year}"
+  end
+
+  def average_rating
+    self.ratings.map {|ratingElement|
+      ratingElement.score
+    }.sum.to_f / self.ratings.count
   end
 
   '''
